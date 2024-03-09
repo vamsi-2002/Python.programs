@@ -1,0 +1,25 @@
+#write
+#import csv
+#with open('python.csv','w') as csvfile:
+ #   fieldnames=['first_name','last_name','rank']
+  #  writer=csv.DictWriter(csvfile,fieldnames=fieldnames)
+   # writer.writeheader()
+    #writer.writerow({'Rank':'B','first_name':'parker','last_name':'brain'})
+    #writer.writerow({'Rank':'A','first_name':'brain','last_name':'parker'})
+#print("writing complete")    
+
+
+
+
+
+
+
+import csv
+data=[['name','age','country'],
+      ['alice',25,'USA'],
+      ['john',30,'UK']]
+file_path=("C:\\users\\lenovo\\Documents\\GitHub\\Python\data.csv")
+with open(file_path,'w',newline="", encoding='UTF-16')as csv_file:
+ writer="csv.writer"(csv_file)
+ writer.writerows(data)
+print("csv sucessfully created")    
